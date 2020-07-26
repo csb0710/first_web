@@ -1,0 +1,32 @@
+	body {
+		background-image : url('4.jpg');
+		background-repeat : no-repeat;
+		background-size : cover;
+	}
+	h1, h2, p {
+		text-align : center;
+	}
+	h3 {
+		text-align : right;
+		border-bottom : 5px black solid;
+	}
+	li {
+		list-style : none;
+		float : left;
+		margin-right : 30px;
+	}
+	#grid_1 {
+		display : grid;
+		grid-template-columns : 1fr 1fr;
+	}
+	#mini_1 {
+		border-right : 2px blue solid;
+	}
+	@media(max-width : 600px) {
+		#grid_1 {
+			display : block;
+		}
+		#mini_1 {
+			border-right : none;
+		}
+	}
